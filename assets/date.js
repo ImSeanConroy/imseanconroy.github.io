@@ -1,0 +1,1 @@
+var date=(new Date).getFullYear(),paragraph=document.getElementById("copyright");paragraph.innerHTML=`Copyright © ${date} Sean Conroy.`;
