@@ -1,3 +1,9 @@
+:root {
+  --white-color: #f8f9fa;
+  --red-color: #fa3454;
+  --black-color: #212529;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -21,6 +27,18 @@ p {
   margin-bottom: 3.2rem;
 }
 
+.bg-red {
+  background-color: var(--red-color) !important;
+}
+
+.bg-white {
+  background-color: var(--white-color) !important;
+}
+
+.bg-black {
+  background-color: var(--black-color) !important;
+}
+
 .container {
   background-color: #fff;
   max-width: 140rem;
@@ -42,8 +60,8 @@ p {
 
 .main-link:hover,
 .main-link:active {
-  color: #fa3454;
-  border-bottom: 1.5px solid #fa3454;
+  color: var(--red-color);
+  border-bottom: 1.5px solid var(--red-color);
 }
 
 /* ============================== */
@@ -56,36 +74,59 @@ p {
 
 .project-imgs {
   margin-bottom: 3.2rem;
+  width: 100%;
 }
 
 .project-img-container {
-  width: 100%;
-  height: 100vh;
-  margin-bottom: 1.8rem;
   position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  margin-bottom: 1.8rem;
 }
 
 .project-img {
+  flex: 0;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.7s ease-in-out;
+  /* visibility: collapse; */
+}
+
+.project-img.active {
+  flex: 1;
+  transition: all 0.7s ease-in-out;
+  /* visibility: visible; */
+}
+
+.carousel-buttons {
+  position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
-.icon {
-  color: rgba(0, 0, 0, 0.4);
+.button {
   position: absolute;
+  color: rgba(0, 0, 0, 0.4);
   font-size: 2.4rem;
   cursor: pointer;
+  height: 100%;
+  padding: 1.6rem 2.4rem;
+  user-select: none;
+  display: flex;
+  align-items: flex-end;
 }
 
-.icon__left {
-  left: 2.4rem;
-  bottom: 1.6rem;
+.left {
+  left: 0px;
 }
 
-.icon__right {
-  right: 2.4rem;
-  bottom: 1.6rem;
+.right {
+  right: 0px;
 }
 
 .project-list {
@@ -140,7 +181,9 @@ p {
 
 .project-link:hover,
 .project-link:active {
-  color: #fa3454;
+  color: var(--red-color);
+  border-bottom: 1.5px solid var(--red-color);
+  transition: all 0.3s;
 }
 
 .project-description {
@@ -179,6 +222,6 @@ p {
 
 .footer-icon:hover,
 .footer-icon:active {
-  color: #fa3454;
-  border-bottom: 1.5px solid #fa3454;
+  color: var(--red-color);
+  border-bottom: 1.5px solid var(--red-color);
 }
