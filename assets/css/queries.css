@@ -1,0 +1,105 @@
+/**************************/
+/* ABOVE 544px (Smaller tablets) */
+/**************************/
+
+@media (min-width: 34em) {
+  /* body {
+    background-color: red;
+  } */
+
+  .container {
+    padding: 0 4.2rem;
+  }
+
+  .footer-nav {
+    flex-direction: row;
+  }
+}
+
+/**************************/
+/* ABOVE 704px (Tablets) */
+/**************************/
+
+@media (min-width: 44em) {
+  /* body {
+    background-color: orange;
+  } */
+
+  .container {
+    padding: 0 6.4rem;
+  }
+
+  .project-imgs {
+    margin-bottom: 0;
+  }
+
+  .project-list {
+    justify-content: flex-end;
+  }
+}
+
+/**************************/
+/* ABOVE 944px (Landscape Tablets) */
+/**************************/
+
+@media (min-width: 59em) {
+  /* body {
+    background-color: yellow;
+  } */
+
+  .container {
+    padding: 0 12.8rem;
+  }
+
+  .text-box {
+    width: 80%;
+  }
+
+  .project-content {
+    flex-direction: row;
+  }
+
+  .project-imgs {
+    margin-bottom: 4.8rem;
+  }
+
+  .project-description {
+    flex: 7;
+  }
+
+  .footer-flex {
+    flex-direction: row;
+  }
+}
+
+/**************************/
+/* ABOVE 1200px (Smaller desktops) */
+/**************************/
+
+@media (min-width: 75em) {
+  /* body {
+    background-color: green;
+  } */
+
+  .container {
+    padding: 0 14.8rem;
+  }
+
+  .text-box {
+    width: 70%;
+  }
+
+  /* .project-content {
+    flex-direction: row;
+  } */
+}
+
+/**************************/
+/* ABOVE 1344px (Larger desktops) */
+/**************************/
+
+@media (min-width: 84em) {
+  /* body {
+    background-color: blue;
+  } */
+}
