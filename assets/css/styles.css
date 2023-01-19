@@ -134,7 +134,7 @@ p {
   gap: 1.8rem;
   justify-content: center;
   font-size: 1.4rem;
-  color: #888;
+  color: #777;
   list-style: none;
 }
 
@@ -169,13 +169,13 @@ p {
 .project-key-info ul {
   list-style: none;
   font-size: 1.6rem;
-  color: #888;
+  color: #777;
 }
 
 .project-link:link,
 .project-link:visited {
   text-decoration: none;
-  color: #888;
+  color: #777;
   transition: all 0.3s;
 }
 
@@ -200,8 +200,8 @@ p {
   flex-direction: column-reverse;
   gap: 3.2rem;
   justify-content: space-between;
-  border-top: 2px solid #ddd;
-  color: #888;
+  border-top: 2px solid #ccc;
+  color: #777;
   padding: 3.2rem 0 4.2rem 0;
 }
 
@@ -215,9 +215,9 @@ p {
 .footer-icon:link,
 .footer-icon:visited {
   text-decoration: none;
-  color: #888;
+  color: #777;
   transition: all 0.3s;
-  border-bottom: 1.5px solid #888;
+  border-bottom: 1.5px solid #777;
 }
 
 .footer-icon:hover,

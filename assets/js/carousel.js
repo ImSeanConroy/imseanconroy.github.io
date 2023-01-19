@@ -29,5 +29,8 @@ function updateDisplay(idx, imgLabels, projectImgs) {
   });
 
   imgLabels[idx - 1].classList.add("active");
-  projectImgs[idx - 1].classList.add("active");
+
+  setTimeout(() => {
+    projectImgs[idx - 1].classList.add("active");
+  }, 400);
 }
