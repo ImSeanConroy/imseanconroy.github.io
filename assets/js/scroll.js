@@ -3,7 +3,7 @@ window.addEventListener("scroll", checkProjects);
 checkProjects();
 
 function checkProjects() {
-  const triggerBottom = (window.innerHeight / 5) * 2;
+  const triggerBottom = (window.innerHeight / 5) * 3;
   projects.forEach((project) => {
     const boxTop = project.getBoundingClientRect().top;
 
