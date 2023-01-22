@@ -1,26 +1,24 @@
-/**************************/
-/* PORJECT 1 - SLIDER 1 */
-/**************************/
-
-.background {
+img[class^="background-animation-"] {
   transition: all 0.4s ease-in-out;
   transition-delay: 0.25s;
   position: absolute;
-  width: 1200px;
-  top: -400px;
 }
 
-.active .background {
+.active img[class^="background-animation-"] {
   transition: all 1.2s ease-in-out;
   top: 0;
 }
 
-.deg25 {
-  rotate: 25deg;
+.background-animation-1 {
+  width: 1105px;
+  height: 600px;
+  top: -400px;
 }
 
-.deg-65 {
-  rotate: -65deg;
+.background-animation-2 {
+  width: 1105px;
+  height: 600px;
+  top: 500px;
 }
 
 .phone {
@@ -28,103 +26,156 @@
   width: 180px;
 }
 
-.slider-1-1 .img-1 {
+/**************************/
+/* PORJECT 1 - SLIDER 1 */
+/**************************/
+
+.upcoming-1 .phone {
   transition: all 0.3s ease-in-out;
+  top: 50%;
+  left: 50%;
+}
+
+.active.upcoming-1 .phone {
+  transition: all 0.6s ease-in-out;
+}
+
+.upcoming-1 .img-1 {
   transition-delay: 0.3s;
-  top: 740px;
-  left: 115px;
+  rotate: 25deg;
+  transform: translate(-75%, 140%);
 }
 
-.active.slider-1-1 .img-1 {
-  transition: all 0.6s ease-in-out;
+.active.upcoming-1 .img-1 {
   transition-delay: 0.6s;
-  top: 165px;
-  left: 440px;
+  transform: translate(-75%, -32%);
 }
 
-.slider-1-1 .img-2 {
-  transition: all 0.3s ease-in-out;
+.upcoming-1 .img-2 {
   transition-delay: 0.25s;
-  top: 650px;
-  left: -75px;
+  rotate: 25deg;
+  transform: translate(-185%, 140%);
 }
 
-.active.slider-1-1 .img-2 {
-  transition: all 0.6s ease-in-out;
+.active.upcoming-1 .img-2 {
   transition-delay: 0.8s;
-  top: 75px;
-  left: 250px;
+  transform: translate(-185%, -32%);
 }
 
-.slider-1-1 .img-3 {
-  transition: all 0.3s ease-in-out;
+.upcoming-1 .img-3 {
   transition-delay: 0.2s;
-  top: 765px;
-  left: -365px;
+  rotate: -65deg;
+  transform: translate(-100%, 100%);
 }
 
-.active.slider-1-1 .img-3 {
-  transition: all 0.6s ease-in-out;
+.active.upcoming-1 .img-3 {
   transition-delay: 1s;
-  top: 390px;
-  left: 210px;
+  transform: translate(-100%, -68%);
 }
 
-.slider-1-1 .img-4 {
-  transition: all 0.3s ease-in-out;
+.upcoming-1 .img-4 {
   transition-delay: 0.15s;
-  top: 765px;
-  left: -365px;
+  rotate: 25deg;
+  transform: translate(-300%, 190%);
 }
 
-.active.slider-1-1 .img-4 {
-  transition: all 0.6s ease-in-out;
+.active.upcoming-1 .img-4 {
   transition-delay: 1.2s;
-  top: 200px;
-  left: -40px;
+  transform: translate(-300%, 30%);
 }
 
-.slider-1-1 .img-5 {
-  transition: all 0.3s ease-in-out;
+.upcoming-1 .img-5 {
   transition-delay: 0.1s;
-  top: 950px;
-  left: 250px;
+  rotate: 25deg;
+  transform: translate(40%, 200%);
 }
 
-.active.slider-1-1 .img-5 {
-  transition: all 0.6s ease-in-out;
+.active.upcoming-1 .img-5 {
   transition-delay: 1.4s;
-  top: 375px;
-  left: 575px;
+  transform: translate(40%, 35%);
 }
 
-.slider-1-1 .img-6 {
-  transition: all 0.3s ease-in-out;
+.upcoming-1 .img-6 {
   transition-delay: 0.05s;
-  top: 200px;
-  left: 1265px;
+  rotate: -65deg;
+  transform: translate(95%, 200%);
 }
 
-.active.slider-1-1 .img-6 {
-  transition: all 0.6s ease-in-out;
+.active.upcoming-1 .img-6 {
   transition-delay: 1.4s;
-  top: 150px;
-  left: 785px;
+  transform: translate(95%, 45%);
 }
 
-.slider-1-1 .img-7 {
-  transition: all 0.3s ease-in-out;
-  top: 1040px;
-  left: 440px;
+.upcoming-1 .img-7 {
+  rotate: 25deg;
+  transform: translate(155%, 200%);
 }
 
-.active.slider-1-1 .img-7 {
-  transition: all 0.6s ease-in-out;
+.active.upcoming-1 .img-7 {
   transition-delay: 1.6s;
-  top: 465px;
-  left: 765px;
+  transform: translate(155%, 35%);
 }
 
 /**************************/
 /* PORJECT 1 - SLIDER 2 */
+/**************************/
+
+.upcoming-2 .phone {
+  transition: all 0.3s ease-in-out;
+  top: -300px;
+  left: 50%;
+}
+
+.active.upcoming-2 .phone {
+  transition: all 0.6s ease-in-out;
+  top: 50%;
+}
+
+.upcoming-2 .img-1 {
+  transition-delay: 0.3s;
+  transform: translate(-480px, -50%);
+}
+
+.upcoming-2 .img-2 {
+  transition-delay: 0.25s;
+  transform: translate(-285px, -50%);
+}
+
+.upcoming-2 .img-3 {
+  transition-delay: 0.2s;
+  transform: translate(-50%, -50%);
+}
+
+.upcoming-2 .img-4 {
+  transition-delay: 0.15s;
+  transform: translate(105px, -50%);
+}
+
+.upcoming-2 .img-5 {
+  transition-delay: 0.1s;
+  transform: translate(300px, -50%);
+}
+
+.upcoming-2.active .img-1 {
+  transition-delay: 0.6s;
+}
+
+.upcoming-2.active .img-2 {
+  transition-delay: 0.8s;
+}
+
+.upcoming-2.active .img-3 {
+  transition-delay: 1s;
+}
+
+.upcoming-2.active .img-4 {
+  transition-delay: 1.2s;
+}
+
+.upcoming-2.active .img-5 {
+  transition-delay: 1.4s;
+}
+
+/**************************/
+/* PORJECT 2 - SLIDER 1 */
 /**************************/
