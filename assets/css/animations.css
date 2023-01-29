@@ -23,7 +23,7 @@ img[class^="background-animation-"] {
 
 .phone {
   position: absolute;
-  width: 180px;
+  width: 120px;
 }
 
 /**************************/
@@ -43,7 +43,7 @@ img[class^="background-animation-"] {
 .upcoming-1 .img-1 {
   transition-delay: 0.3s;
   rotate: 25deg;
-  transform: translate(-75%, 140%);
+  transform: translate(-75%, 160%);
 }
 
 .active.upcoming-1 .img-1 {
@@ -54,7 +54,7 @@ img[class^="background-animation-"] {
 .upcoming-1 .img-2 {
   transition-delay: 0.25s;
   rotate: 25deg;
-  transform: translate(-185%, 140%);
+  transform: translate(-185%, 180%);
 }
 
 .active.upcoming-1 .img-2 {
@@ -65,7 +65,7 @@ img[class^="background-animation-"] {
 .upcoming-1 .img-3 {
   transition-delay: 0.2s;
   rotate: -65deg;
-  transform: translate(-100%, 100%);
+  transform: translate(-100%, 160%);
 }
 
 .active.upcoming-1 .img-3 {
@@ -133,12 +133,12 @@ img[class^="background-animation-"] {
 
 .upcoming-2 .img-1 {
   transition-delay: 0.3s;
-  transform: translate(-480px, -50%);
+  transform: translate(-270%, -50%);
 }
 
 .upcoming-2 .img-2 {
   transition-delay: 0.25s;
-  transform: translate(-285px, -50%);
+  transform: translate(-160%, -50%);
 }
 
 .upcoming-2 .img-3 {
@@ -148,12 +148,12 @@ img[class^="background-animation-"] {
 
 .upcoming-2 .img-4 {
   transition-delay: 0.15s;
-  transform: translate(105px, -50%);
+  transform: translate(60%, -50%);
 }
 
 .upcoming-2 .img-5 {
   transition-delay: 0.1s;
-  transform: translate(300px, -50%);
+  transform: translate(170%, -50%);
 }
 
 .upcoming-2.active .img-1 {
@@ -204,7 +204,7 @@ img[class^="background-animation-"] {
   transition: all 0.6s ease-in-out;
   position: absolute;
   transition-delay: 0.05s;
-  width: 600px;
+  width: 275px;
   top: -300px;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -254,30 +254,6 @@ img[class^="background-animation-"] {
   transition-delay: 0.15s;
 }
 
-.cinematic-timelines-2 .tablet {
-  transition: all 0.6s ease-in-out;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 600px;
-  rotate: -12deg;
-  z-index: 1;
-  transform: translate(-340px, -250%);
-  transition-delay: 0.1s;
-}
-
-.cinematic-timelines-2 .phone-sm {
-  transition: all 0.6s ease-in-out;
-  top: 50%;
-  left: 50%;
-  width: 600px;
-  position: absolute;
-  transform: translate(-120px, -200%);
-  rotate: 15deg;
-  z-index: 2;
-  transition-delay: 0.05s;
-}
-
 .cinematic-timelines-2.active .img-2 {
   transition-delay: 0.2s;
 }
@@ -297,12 +273,36 @@ img[class^="background-animation-"] {
   top: 50%;
 }
 
+.cinematic-timelines-2 .tablet {
+  transition: all 0.6s ease-in-out;
+  top: 50%;
+  left: 50%;
+  width: 250px;
+  position: absolute;
+  rotate: -12deg;
+  z-index: 1;
+  transform: translate(-55%, -350%);
+  transition-delay: 0.1s;
+}
+
 .cinematic-timelines-2.active .tablet {
-  transform: translate(-340px, -75%);
+  transform: translate(-55%, -75%);
   transition-delay: 1.2s;
 }
 
+.cinematic-timelines-2 .phone-sm {
+  transition: all 0.6s ease-in-out;
+  top: 50%;
+  left: 50%;
+  width: 250px;
+  position: absolute;
+  rotate: 15deg;
+  z-index: 2;
+  transform: translate(-20%, -300%);
+  transition-delay: 0.05s;
+}
+
 .cinematic-timelines-2.active .phone-sm {
-  transform: translate(-120px, -50%);
+  transform: translate(-20%, -50%);
   transition-delay: 1.4s;
 }
